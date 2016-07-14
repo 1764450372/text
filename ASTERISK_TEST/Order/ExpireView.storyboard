@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nJg-oU-oeY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Expire View Controller-->
+        <scene sceneID="JG2-to-BaV">
+            <objects>
+                <viewController id="nJg-oU-oeY" customClass="ExpireViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3kq-bG-NDI"/>
+                        <viewControllerLayoutGuide type="bottom" id="PNf-hb-BOC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NmR-rF-vlV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-fd-1Xu">
+                                <rect key="frame" x="30" y="211" width="260" height="145"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="HkA-IZ-6Fg"/>
+                                    <constraint firstAttribute="height" constant="145" id="ryQ-z0-oI5"/>
+                                    <constraint firstAttribute="width" constant="260" id="ts8-k4-Tn9"/>
+                                    <constraint firstAttribute="height" constant="145" id="uYq-fR-Hcc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="無操作警告 解除">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HkA-IZ-6Fg"/>
+                                        <exclude reference="uYq-fR-Hcc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="iba_close:" destination="nJg-oU-oeY" eventType="touchUpInside" id="J3L-82-A5e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j8j-fd-1Xu" firstAttribute="leading" secondItem="NmR-rF-vlV" secondAttribute="leadingMargin" constant="10" id="YAG-cm-SNB"/>
+                            <constraint firstItem="j8j-fd-1Xu" firstAttribute="centerX" secondItem="NmR-rF-vlV" secondAttribute="centerX" id="irf-3r-UUb"/>
+                            <constraint firstItem="j8j-fd-1Xu" firstAttribute="centerY" secondItem="NmR-rF-vlV" secondAttribute="centerY" id="pS9-Uy-JNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j8j-fd-1Xu" secondAttribute="trailing" constant="10" id="qCr-FV-Aeo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YAG-cm-SNB"/>
+                                <exclude reference="qCr-FV-Aeo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btClose" destination="j8j-fd-1Xu" id="JCn-52-qik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fk9-3O-BNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="289"/>
+        </scene>
+    </scenes>
+</document>
